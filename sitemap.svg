@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="3000" viewBox="0 0 1200 3000" font-family="'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Nanum Gothic', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#666"/>
+    </marker>
+    <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#D6336C"/>
+    </marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1971C2"/>
+    </marker>
+    <marker id="arrC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#7048E8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="3000" fill="#FFFFFF"/>
+
+  <!-- ============ HEADER ============ -->
+  <text x="40" y="58" font-size="36" font-weight="700" fill="#111">FitLog — 정보 구조도 (IA)</text>
+  <text x="40" y="92" font-size="15" fill="#666">작성자: [본인 이름]   |   총 페이지: 25개   |   최대 Depth: 3   |   그룹: 6개 + 예외</text>
+  <line x1="40" y1="108" x2="1160" y2="108" stroke="#DDD" stroke-width="1"/>
+
+  <!-- ============ DEPTH HEADERS ============ -->
+  <rect x="220" y="130" width="220" height="38" rx="8" fill="#F5F5F5" stroke="#BBB"/>
+  <text x="330" y="155" text-anchor="middle" font-size="15" font-weight="700" fill="#444">◆ Depth 1 (메인)</text>
+  <rect x="540" y="130" width="220" height="38" rx="8" fill="#F5F5F5" stroke="#BBB"/>
+  <text x="650" y="155" text-anchor="middle" font-size="15" font-weight="700" fill="#444">◆ Depth 2 (하위)</text>
+  <rect x="860" y="130" width="220" height="38" rx="8" fill="#F5F5F5" stroke="#BBB"/>
+  <text x="970" y="155" text-anchor="middle" font-size="15" font-weight="700" fill="#444">◆ Depth 3 (상세)</text>
+
+  <!-- ============ GROUP 1: 진입 (y=200~700) ============ -->
+  <rect x="20" y="200" width="1160" height="500" rx="14" fill="#F0F6FF" stroke="#4A7DC4" stroke-width="2" stroke-dasharray="8 4"/>
+  <circle cx="42" cy="232" r="10" fill="#4A7DC4"/>
+  <text x="60" y="238" font-size="20" font-weight="700" fill="#1F3F75">진입 그룹 (6 pages)</text>
+  <text x="290" y="238" font-size="13" fill="#4A7DC4">— 앱 첫 진입부터 초기 설정까지의 단방향 흐름</text>
+
+  <!-- P01 스플래시 (D1) -->
+  <rect x="220" y="380" width="220" height="90" rx="8" fill="#DCE7F8" stroke="#4A7DC4" stroke-width="2"/>
+  <text x="330" y="403" text-anchor="middle" font-size="12" font-weight="700" fill="#4A7DC4">[P01]</text>
+  <text x="330" y="427" text-anchor="middle" font-size="17" font-weight="700" fill="#1F3F75">스플래시</text>
+  <line x1="245" y1="438" x2="415" y2="438" stroke="#4A7DC4" stroke-width="0.5" opacity="0.5"/>
+  <text x="330" y="458" text-anchor="middle" font-size="12" fill="#333">앱 로딩, 자동 로그인 체크</text>
+
+  <!-- P02 온보딩 (D2 top) -->
+  <rect x="540" y="270" width="220" height="90" rx="8" fill="#DCE7F8" stroke="#4A7DC4" stroke-width="2"/>
+  <text x="650" y="293" text-anchor="middle" font-size="12" font-weight="700" fill="#4A7DC4">[P02]</text>
+  <text x="650" y="317" text-anchor="middle" font-size="17" font-weight="700" fill="#1F3F75">온보딩</text>
+  <line x1="565" y1="328" x2="735" y2="328" stroke="#4A7DC4" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="348" text-anchor="middle" font-size="12" fill="#333">서비스 소개 3 step</text>
+
+  <!-- P03 로그인 (D2 mid) -->
+  <rect x="540" y="380" width="220" height="90" rx="8" fill="#DCE7F8" stroke="#4A7DC4" stroke-width="2"/>
+  <text x="650" y="403" text-anchor="middle" font-size="12" font-weight="700" fill="#4A7DC4">[P03]</text>
+  <text x="650" y="427" text-anchor="middle" font-size="17" font-weight="700" fill="#1F3F75">로그인</text>
+  <line x1="565" y1="438" x2="735" y2="438" stroke="#4A7DC4" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="458" text-anchor="middle" font-size="12" fill="#333">이메일 / 소셜 로그인</text>
+
+  <!-- P04 회원가입 (D2 bot) -->
+  <rect x="540" y="490" width="220" height="90" rx="8" fill="#DCE7F8" stroke="#4A7DC4" stroke-width="2"/>
+  <text x="650" y="513" text-anchor="middle" font-size="12" font-weight="700" fill="#4A7DC4">[P04]</text>
+  <text x="650" y="537" text-anchor="middle" font-size="17" font-weight="700" fill="#1F3F75">회원가입</text>
+  <line x1="565" y1="548" x2="735" y2="548" stroke="#4A7DC4" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="568" text-anchor="middle" font-size="12" fill="#333">계정 생성</text>
+
+  <!-- P05 신체정보 (D3 top) -->
+  <rect x="860" y="490" width="220" height="90" rx="8" fill="#DCE7F8" stroke="#4A7DC4" stroke-width="2"/>
+  <text x="970" y="513" text-anchor="middle" font-size="12" font-weight="700" fill="#4A7DC4">[P05]</text>
+  <text x="970" y="537" text-anchor="middle" font-size="17" font-weight="700" fill="#1F3F75">신체정보 입력</text>
+  <line x1="885" y1="548" x2="1055" y2="548" stroke="#4A7DC4" stroke-width="0.5" opacity="0.5"/>
+  <text x="970" y="568" text-anchor="middle" font-size="12" fill="#333">키 / 몸무게 / 나이 입력</text>
+
+  <!-- P06 운동목표 (D3 bot) -->
+  <rect x="860" y="600" width="220" height="90" rx="8" fill="#DCE7F8" stroke="#4A7DC4" stroke-width="2"/>
+  <text x="970" y="623" text-anchor="middle" font-size="12" font-weight="700" fill="#4A7DC4">[P06]</text>
+  <text x="970" y="647" text-anchor="middle" font-size="17" font-weight="700" fill="#1F3F75">운동 목표 설정</text>
+  <line x1="885" y1="658" x2="1055" y2="658" stroke="#4A7DC4" stroke-width="0.5" opacity="0.5"/>
+  <text x="970" y="678" text-anchor="middle" font-size="12" fill="#333">감량 / 증량 / 유지 선택</text>
+
+  <!-- Group 1 arrows -->
+  <line x1="440" y1="425" x2="540" y2="315" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="440" y1="425" x2="540" y2="425" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="440" y1="425" x2="540" y2="535" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="760" y1="535" x2="860" y2="535" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="760" y1="535" x2="860" y2="645" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- ============ GROUP 2: 메인 (y=720~870) ============ -->
+  <rect x="20" y="720" width="1160" height="150" rx="14" fill="#F0FAF0" stroke="#4A9F5F" stroke-width="2" stroke-dasharray="8 4"/>
+  <circle cx="42" cy="752" r="10" fill="#4A9F5F"/>
+  <text x="60" y="758" font-size="20" font-weight="700" fill="#1B5E2C">메인 그룹 (1 page)</text>
+  <text x="265" y="758" font-size="13" fill="#4A9F5F">— 모든 기능의 허브, 매일 진입하는 핵심 화면</text>
+
+  <!-- P07 홈 (D1) -->
+  <rect x="220" y="775" width="220" height="90" rx="8" fill="#DCF0E0" stroke="#4A9F5F" stroke-width="2"/>
+  <text x="330" y="798" text-anchor="middle" font-size="12" font-weight="700" fill="#4A9F5F">[P07]</text>
+  <text x="330" y="822" text-anchor="middle" font-size="17" font-weight="700" fill="#1B5E2C">홈 (대시보드)</text>
+  <line x1="245" y1="833" x2="415" y2="833" stroke="#4A9F5F" stroke-width="0.5" opacity="0.5"/>
+  <text x="330" y="853" text-anchor="middle" font-size="12" fill="#333">오늘의 루틴, AI 추천, 일일 요약</text>
+
+  <!-- 메인에서 다른 그룹으로 navigation hint -->
+  <text x="500" y="810" font-size="13" font-style="italic" fill="#666">↓  홈에서 4개 주요 영역으로 이동</text>
+  <text x="500" y="830" font-size="12" fill="#888">운동 기록 · AI 코치 · 통계 · 마이페이지</text>
+
+  <!-- ============ GROUP 3: 운동 (y=890~1390) ============ -->
+  <rect x="20" y="890" width="1160" height="500" rx="14" fill="#FFF6EE" stroke="#E07A2D" stroke-width="2" stroke-dasharray="8 4"/>
+  <circle cx="42" cy="922" r="10" fill="#E07A2D"/>
+  <text x="60" y="928" font-size="20" font-weight="700" fill="#7A3608">운동 그룹 (5 pages)</text>
+  <text x="270" y="928" font-size="13" fill="#E07A2D">— 매일 반복되는 핵심 사용 동선 (기록의 메인 흐름)</text>
+
+  <!-- P08 운동기록 (D1) -->
+  <rect x="220" y="1080" width="220" height="90" rx="8" fill="#FFE4D1" stroke="#E07A2D" stroke-width="2"/>
+  <text x="330" y="1103" text-anchor="middle" font-size="12" font-weight="700" fill="#E07A2D">[P08]</text>
+  <text x="330" y="1127" text-anchor="middle" font-size="17" font-weight="700" fill="#7A3608">운동 기록</text>
+  <line x1="245" y1="1138" x2="415" y2="1138" stroke="#E07A2D" stroke-width="0.5" opacity="0.5"/>
+  <text x="330" y="1158" text-anchor="middle" font-size="12" fill="#333">운동 시작 메인</text>
+
+  <!-- P09 운동종류 선택 (D2) -->
+  <rect x="540" y="1080" width="220" height="90" rx="8" fill="#FFE4D1" stroke="#E07A2D" stroke-width="2"/>
+  <text x="650" y="1103" text-anchor="middle" font-size="12" font-weight="700" fill="#E07A2D">[P09]</text>
+  <text x="650" y="1127" text-anchor="middle" font-size="17" font-weight="700" fill="#7A3608">운동 종류 선택</text>
+  <line x1="565" y1="1138" x2="735" y2="1138" stroke="#E07A2D" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="1158" text-anchor="middle" font-size="12" fill="#333">헬스 / 유산소 / 홈트 카테고리</text>
+
+  <!-- P10 운동 검색 (D3 top) -->
+  <rect x="860" y="970" width="220" height="90" rx="8" fill="#FFE4D1" stroke="#E07A2D" stroke-width="2"/>
+  <text x="970" y="993" text-anchor="middle" font-size="12" font-weight="700" fill="#E07A2D">[P10]</text>
+  <text x="970" y="1017" text-anchor="middle" font-size="17" font-weight="700" fill="#7A3608">운동 검색</text>
+  <line x1="885" y1="1028" x2="1055" y2="1028" stroke="#E07A2D" stroke-width="0.5" opacity="0.5"/>
+  <text x="970" y="1048" text-anchor="middle" font-size="12" fill="#333">종목 검색, 필터 적용</text>
+
+  <!-- P11 운동 상세/기록 (D3 mid) -->
+  <rect x="860" y="1080" width="220" height="90" rx="8" fill="#FFE4D1" stroke="#E07A2D" stroke-width="2"/>
+  <text x="970" y="1103" text-anchor="middle" font-size="12" font-weight="700" fill="#E07A2D">[P11]</text>
+  <text x="970" y="1127" text-anchor="middle" font-size="17" font-weight="700" fill="#7A3608">운동 상세 / 기록</text>
+  <line x1="885" y1="1138" x2="1055" y2="1138" stroke="#E07A2D" stroke-width="0.5" opacity="0.5"/>
+  <text x="970" y="1158" text-anchor="middle" font-size="12" fill="#333">세트 / 중량 / 횟수 입력</text>
+
+  <!-- P12 운동 완료 요약 (D3 bot) -->
+  <rect x="860" y="1190" width="220" height="90" rx="8" fill="#FFE4D1" stroke="#E07A2D" stroke-width="2"/>
+  <text x="970" y="1213" text-anchor="middle" font-size="12" font-weight="700" fill="#E07A2D">[P12]</text>
+  <text x="970" y="1237" text-anchor="middle" font-size="17" font-weight="700" fill="#7A3608">운동 완료 요약</text>
+  <line x1="885" y1="1248" x2="1055" y2="1248" stroke="#E07A2D" stroke-width="0.5" opacity="0.5"/>
+  <text x="970" y="1268" text-anchor="middle" font-size="12" fill="#333">시간, 칼로리, 볼륨 요약</text>
+
+  <!-- Group 3 arrows -->
+  <line x1="440" y1="1125" x2="540" y2="1125" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="760" y1="1125" x2="860" y2="1015" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="760" y1="1125" x2="860" y2="1125" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="760" y1="1125" x2="860" y2="1235" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- ============ GROUP 4: AI (y=1410~1680) ============ -->
+  <rect x="20" y="1410" width="1160" height="270" rx="14" fill="#F8F2FF" stroke="#8B5DCB" stroke-width="2" stroke-dasharray="8 4"/>
+  <circle cx="42" cy="1442" r="10" fill="#8B5DCB"/>
+  <text x="60" y="1448" font-size="20" font-weight="700" fill="#3D2566">AI 그룹 (3 pages)</text>
+  <text x="240" y="1448" font-size="13" fill="#8B5DCB">— 추천 / 분석 같은 부가 기능을 한 곳에 묶어 탐색 부담 감소</text>
+
+  <!-- P13 AI 코치 (D1) -->
+  <rect x="220" y="1505" width="220" height="90" rx="8" fill="#ECE0F7" stroke="#8B5DCB" stroke-width="2"/>
+  <text x="330" y="1528" text-anchor="middle" font-size="12" font-weight="700" fill="#8B5DCB">[P13]</text>
+  <text x="330" y="1552" text-anchor="middle" font-size="17" font-weight="700" fill="#3D2566">AI 코치</text>
+  <line x1="245" y1="1563" x2="415" y2="1563" stroke="#8B5DCB" stroke-width="0.5" opacity="0.5"/>
+  <text x="330" y="1583" text-anchor="middle" font-size="12" fill="#333">AI 추천 루틴 메인</text>
+
+  <!-- P14 추천 루틴 상세 (D2 top) -->
+  <rect x="540" y="1450" width="220" height="90" rx="8" fill="#ECE0F7" stroke="#8B5DCB" stroke-width="2"/>
+  <text x="650" y="1473" text-anchor="middle" font-size="12" font-weight="700" fill="#8B5DCB">[P14]</text>
+  <text x="650" y="1497" text-anchor="middle" font-size="17" font-weight="700" fill="#3D2566">추천 루틴 상세</text>
+  <line x1="565" y1="1508" x2="735" y2="1508" stroke="#8B5DCB" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="1528" text-anchor="middle" font-size="12" fill="#333">루틴 구성 미리보기</text>
+
+  <!-- P15 AI 분석 리포트 (D2 bot) -->
+  <rect x="540" y="1560" width="220" height="90" rx="8" fill="#ECE0F7" stroke="#8B5DCB" stroke-width="2"/>
+  <text x="650" y="1583" text-anchor="middle" font-size="12" font-weight="700" fill="#8B5DCB">[P15]</text>
+  <text x="650" y="1607" text-anchor="middle" font-size="17" font-weight="700" fill="#3D2566">AI 분석 리포트</text>
+  <line x1="565" y1="1618" x2="735" y2="1618" stroke="#8B5DCB" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="1638" text-anchor="middle" font-size="12" fill="#333">부위별 부족 분석</text>
+
+  <!-- Group 4 arrows -->
+  <line x1="440" y1="1550" x2="540" y2="1495" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="440" y1="1550" x2="540" y2="1605" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- ============ GROUP 5: 통계 (y=1700~2030) ============ -->
+  <rect x="20" y="1700" width="1160" height="330" rx="14" fill="#FFFBE5" stroke="#C9A227" stroke-width="2" stroke-dasharray="8 4"/>
+  <circle cx="42" cy="1732" r="10" fill="#C9A227"/>
+  <text x="60" y="1738" font-size="20" font-weight="700" fill="#6B5009">통계 그룹 (4 pages)</text>
+  <text x="270" y="1738" font-size="13" fill="#A88718">— 데이터 회고 영역, 사용자가 "내 성장 확인" 목적으로 진입</text>
+
+  <!-- P16 통계 대시보드 (D1) -->
+  <rect x="220" y="1850" width="220" height="90" rx="8" fill="#FFF3C7" stroke="#C9A227" stroke-width="2"/>
+  <text x="330" y="1873" text-anchor="middle" font-size="12" font-weight="700" fill="#A88718">[P16]</text>
+  <text x="330" y="1897" text-anchor="middle" font-size="17" font-weight="700" fill="#6B5009">통계 대시보드</text>
+  <line x1="245" y1="1908" x2="415" y2="1908" stroke="#C9A227" stroke-width="0.5" opacity="0.5"/>
+  <text x="330" y="1928" text-anchor="middle" font-size="12" fill="#333">주 / 월간 그래프</text>
+
+  <!-- P17 부위별 볼륨 분석 (D2 top) -->
+  <rect x="540" y="1790" width="220" height="90" rx="8" fill="#FFF3C7" stroke="#C9A227" stroke-width="2"/>
+  <text x="650" y="1813" text-anchor="middle" font-size="12" font-weight="700" fill="#A88718">[P17]</text>
+  <text x="650" y="1837" text-anchor="middle" font-size="17" font-weight="700" fill="#6B5009">부위별 볼륨 분석</text>
+  <line x1="565" y1="1848" x2="735" y2="1848" stroke="#C9A227" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="1868" text-anchor="middle" font-size="12" fill="#333">가슴 / 등 / 하체 분포</text>
+
+  <!-- P18 운동 캘린더 (D2 bot) -->
+  <rect x="540" y="1900" width="220" height="90" rx="8" fill="#FFF3C7" stroke="#C9A227" stroke-width="2"/>
+  <text x="650" y="1923" text-anchor="middle" font-size="12" font-weight="700" fill="#A88718">[P18]</text>
+  <text x="650" y="1947" text-anchor="middle" font-size="17" font-weight="700" fill="#6B5009">운동 캘린더</text>
+  <line x1="565" y1="1958" x2="735" y2="1958" stroke="#C9A227" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="1978" text-anchor="middle" font-size="12" fill="#333">월간 운동 이력</text>
+
+  <!-- P19 일일 기록 상세 (D3) -->
+  <rect x="860" y="1900" width="220" height="90" rx="8" fill="#FFF3C7" stroke="#C9A227" stroke-width="2"/>
+  <text x="970" y="1923" text-anchor="middle" font-size="12" font-weight="700" fill="#A88718">[P19]</text>
+  <text x="970" y="1947" text-anchor="middle" font-size="17" font-weight="700" fill="#6B5009">일일 기록 상세</text>
+  <line x1="885" y1="1958" x2="1055" y2="1958" stroke="#C9A227" stroke-width="0.5" opacity="0.5"/>
+  <text x="970" y="1978" text-anchor="middle" font-size="12" fill="#333">특정 날짜 기록 조회</text>
+
+  <!-- Group 5 arrows -->
+  <line x1="440" y1="1895" x2="540" y2="1835" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="440" y1="1895" x2="540" y2="1945" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="760" y1="1945" x2="860" y2="1945" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- ============ GROUP 6: 사용자 (y=2050~2550) ============ -->
+  <rect x="20" y="2050" width="1160" height="500" rx="14" fill="#F5F5F5" stroke="#888888" stroke-width="2" stroke-dasharray="8 4"/>
+  <circle cx="42" cy="2082" r="10" fill="#888888"/>
+  <text x="60" y="2088" font-size="20" font-weight="700" fill="#2C2C2C">사용자 그룹 (6 pages)</text>
+  <text x="290" y="2088" font-size="13" fill="#666">— 진입 빈도는 낮지만 깊이 있는 영역 (Depth 3까지 허용)</text>
+
+  <!-- P20 마이페이지 (D1) -->
+  <rect x="220" y="2230" width="220" height="90" rx="8" fill="#E5E5E5" stroke="#666" stroke-width="2"/>
+  <text x="330" y="2253" text-anchor="middle" font-size="12" font-weight="700" fill="#555">[P20]</text>
+  <text x="330" y="2277" text-anchor="middle" font-size="17" font-weight="700" fill="#2C2C2C">마이페이지</text>
+  <line x1="245" y1="2288" x2="415" y2="2288" stroke="#666" stroke-width="0.5" opacity="0.5"/>
+  <text x="330" y="2308" text-anchor="middle" font-size="12" fill="#333">프로필 메인</text>
+
+  <!-- P21 프로필 수정 (D2 top) -->
+  <rect x="540" y="2120" width="220" height="90" rx="8" fill="#E5E5E5" stroke="#666" stroke-width="2"/>
+  <text x="650" y="2143" text-anchor="middle" font-size="12" font-weight="700" fill="#555">[P21]</text>
+  <text x="650" y="2167" text-anchor="middle" font-size="17" font-weight="700" fill="#2C2C2C">프로필 수정</text>
+  <line x1="565" y1="2178" x2="735" y2="2178" stroke="#666" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="2198" text-anchor="middle" font-size="12" fill="#333">닉네임 / 사진 변경</text>
+
+  <!-- P22 목표 수정 (D2 mid) -->
+  <rect x="540" y="2230" width="220" height="90" rx="8" fill="#E5E5E5" stroke="#666" stroke-width="2"/>
+  <text x="650" y="2253" text-anchor="middle" font-size="12" font-weight="700" fill="#555">[P22]</text>
+  <text x="650" y="2277" text-anchor="middle" font-size="17" font-weight="700" fill="#2C2C2C">목표 수정</text>
+  <line x1="565" y1="2288" x2="735" y2="2288" stroke="#666" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="2308" text-anchor="middle" font-size="12" fill="#333">운동 목표 재설정</text>
+
+  <!-- P23 설정 (D2 bot) -->
+  <rect x="540" y="2340" width="220" height="90" rx="8" fill="#E5E5E5" stroke="#666" stroke-width="2"/>
+  <text x="650" y="2363" text-anchor="middle" font-size="12" font-weight="700" fill="#555">[P23]</text>
+  <text x="650" y="2387" text-anchor="middle" font-size="17" font-weight="700" fill="#2C2C2C">설정</text>
+  <line x1="565" y1="2398" x2="735" y2="2398" stroke="#666" stroke-width="0.5" opacity="0.5"/>
+  <text x="650" y="2418" text-anchor="middle" font-size="12" fill="#333">환경설정 메인</text>
+
+  <!-- P24 알림 설정 (D3 top) -->
+  <rect x="860" y="2340" width="220" height="90" rx="8" fill="#E5E5E5" stroke="#666" stroke-width="2"/>
+  <text x="970" y="2363" text-anchor="middle" font-size="12" font-weight="700" fill="#555">[P24]</text>
+  <text x="970" y="2387" text-anchor="middle" font-size="17" font-weight="700" fill="#2C2C2C">알림 설정</text>
+  <line x1="885" y1="2398" x2="1055" y2="2398" stroke="#666" stroke-width="0.5" opacity="0.5"/>
+  <text x="970" y="2418" text-anchor="middle" font-size="12" fill="#333">푸시 알림 ON / OFF</text>
+
+  <!-- P25 계정 관리 (D3 bot) -->
+  <rect x="860" y="2450" width="220" height="90" rx="8" fill="#E5E5E5" stroke="#666" stroke-width="2"/>
+  <text x="970" y="2473" text-anchor="middle" font-size="12" font-weight="700" fill="#555">[P25]</text>
+  <text x="970" y="2497" text-anchor="middle" font-size="17" font-weight="700" fill="#2C2C2C">계정 관리</text>
+  <line x1="885" y1="2508" x2="1055" y2="2508" stroke="#666" stroke-width="0.5" opacity="0.5"/>
+  <text x="970" y="2528" text-anchor="middle" font-size="12" fill="#333">비밀번호 변경 / 탈퇴</text>
+
+  <!-- Group 6 arrows -->
+  <line x1="440" y1="2275" x2="540" y2="2165" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="440" y1="2275" x2="540" y2="2275" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="440" y1="2275" x2="540" y2="2385" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="760" y1="2385" x2="860" y2="2385" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="760" y1="2385" x2="860" y2="2495" stroke="#666" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- ============ GROUP 7: 예외 (y=2570~2740) ============ -->
+  <rect x="20" y="2570" width="1160" height="170" rx="14" fill="#FFEEEE" stroke="#C84747" stroke-width="2.5"/>
+  <circle cx="42" cy="2602" r="10" fill="#C84747"/>
+  <text x="60" y="2608" font-size="20" font-weight="700" fill="#6E1818">예외 화면 그룹 (4 pages)</text>
+  <text x="320" y="2608" font-size="13" fill="#C84747">— 모든 흐름에서 발생 가능한 비정상 상황 처리</text>
+
+  <!-- E01 404 -->
+  <rect x="60" y="2625" width="265" height="100" rx="8" fill="#FFD6D6" stroke="#C84747" stroke-width="2"/>
+  <text x="192" y="2650" text-anchor="middle" font-size="12" font-weight="700" fill="#C84747">[E01]</text>
+  <text x="192" y="2674" text-anchor="middle" font-size="17" font-weight="700" fill="#6E1818">404 에러</text>
+  <line x1="85" y1="2685" x2="300" y2="2685" stroke="#C84747" stroke-width="0.5" opacity="0.5"/>
+  <text x="192" y="2706" text-anchor="middle" font-size="12" fill="#333">잘못된 경로 접근 시 안내</text>
+
+  <!-- E02 네트워크 오류 -->
+  <rect x="345" y="2625" width="265" height="100" rx="8" fill="#FFD6D6" stroke="#C84747" stroke-width="2"/>
+  <text x="477" y="2650" text-anchor="middle" font-size="12" font-weight="700" fill="#C84747">[E02]</text>
+  <text x="477" y="2674" text-anchor="middle" font-size="17" font-weight="700" fill="#6E1818">네트워크 오류</text>
+  <line x1="370" y1="2685" x2="585" y2="2685" stroke="#C84747" stroke-width="0.5" opacity="0.5"/>
+  <text x="477" y="2706" text-anchor="middle" font-size="12" fill="#333">인터넷 연결 끊김 안내</text>
+
+  <!-- E03 빈 상태 -->
+  <rect x="630" y="2625" width="265" height="100" rx="8" fill="#FFD6D6" stroke="#C84747" stroke-width="2"/>
+  <text x="762" y="2650" text-anchor="middle" font-size="12" font-weight="700" fill="#C84747">[E03]</text>
+  <text x="762" y="2674" text-anchor="middle" font-size="17" font-weight="700" fill="#6E1818">빈 상태</text>
+  <line x1="655" y1="2685" x2="870" y2="2685" stroke="#C84747" stroke-width="0.5" opacity="0.5"/>
+  <text x="762" y="2706" text-anchor="middle" font-size="12" fill="#333">기록 / 검색결과 없음</text>
+
+  <!-- E04 로딩 상태 -->
+  <rect x="915" y="2625" width="225" height="100" rx="8" fill="#FFD6D6" stroke="#C84747" stroke-width="2"/>
+  <text x="1027" y="2650" text-anchor="middle" font-size="12" font-weight="700" fill="#C84747">[E04]</text>
+  <text x="1027" y="2674" text-anchor="middle" font-size="17" font-weight="700" fill="#6E1818">로딩 상태</text>
+  <line x1="940" y1="2685" x2="1115" y2="2685" stroke="#C84747" stroke-width="0.5" opacity="0.5"/>
+  <text x="1027" y="2706" text-anchor="middle" font-size="12" fill="#333">데이터 불러오는 중</text>
+
+  <!-- ============ SCENARIO LEGEND (y=2770~2980) ============ -->
+  <rect x="20" y="2770" width="1160" height="210" rx="14" fill="#FAFAFA" stroke="#999" stroke-width="1.5"/>
+  <text x="40" y="2802" font-size="20" font-weight="700" fill="#222">사용자 동선 (User Flow) — 메뉴 그룹핑은 아래 시나리오 기반으로 설계됨</text>
+
+  <!-- 시나리오 A -->
+  <circle cx="50" cy="2840" r="10" fill="#D6336C"/>
+  <text x="50" y="2845" text-anchor="middle" font-size="11" font-weight="700" fill="#FFF">A</text>
+  <text x="70" y="2845" font-size="14" font-weight="700" fill="#D6336C">신규 가입 → 첫 운동 기록</text>
+  <text x="280" y="2845" font-size="13" fill="#444">P01 → P03 → P04 → P05 → P06 → P07 → P08 → P09 → P11 → P12</text>
+
+  <!-- 시나리오 B -->
+  <circle cx="50" cy="2880" r="10" fill="#1971C2"/>
+  <text x="50" y="2885" text-anchor="middle" font-size="11" font-weight="700" fill="#FFF">B</text>
+  <text x="70" y="2885" font-size="14" font-weight="700" fill="#1971C2">일상적 운동 기록 → 통계 확인</text>
+  <text x="320" y="2885" font-size="13" fill="#444">P07 → P08 → P09 → P11 → P12 → P16 → P17</text>
+
+  <!-- 시나리오 C -->
+  <circle cx="50" cy="2920" r="10" fill="#7048E8"/>
+  <text x="50" y="2925" text-anchor="middle" font-size="11" font-weight="700" fill="#FFF">C</text>
+  <text x="70" y="2925" font-size="14" font-weight="700" fill="#7048E8">데이터 분석 → AI 코칭 → 목표 재설정</text>
+  <text x="380" y="2925" font-size="13" fill="#444">P16 → P17 → P15 → P14 → P22</text>
+
+  <!-- 시나리오 D -->
+  <circle cx="50" cy="2960" r="10" fill="#666"/>
+  <text x="50" y="2965" text-anchor="middle" font-size="11" font-weight="700" fill="#FFF">D</text>
+  <text x="70" y="2965" font-size="14" font-weight="700" fill="#666">예외 흐름</text>
+  <text x="170" y="2965" font-size="13" fill="#444">네트워크 끊김 → E02  /  검색결과 없음 → E03  /  잘못된 URL → E01  /  데이터 로딩 → E04</text>
+</svg>
