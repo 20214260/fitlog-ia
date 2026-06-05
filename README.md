@@ -12,6 +12,48 @@
 | Mission 04 | 사용자 플로우 설계 | [`userflow.png`](./userflow.png) |
 | Mission 05 | 기능 명세서 작성 | [`functional-spec.md`](./functional-spec.md), [`screen-feature-map.png`](./screen-feature-map.png) |
 | Mission 06 | 와이어프레임 리뷰 & 피드백 | [`wireframe-v1.png`](./wireframe-v1.png), [`review-feedback.md`](./review-feedback.md), [`wireframe-v2.png`](./wireframe-v2.png) |
+
+---
+
+## 📘 통합 기획서 (Mission 07)
+
+본 레포의 모든 산출물(Mission 03~06)을 하나의 기획서로 통합 정리했습니다.
+
+### 📄 [→ proposal.md 전문 보기](./proposal.md)
+
+### 🗺️ 전체 기획 과정 한눈에 보기
+
+![Project Overview](./project-overview.png)
+
+> 문제 정의 → 페르소나 → 시나리오 → IA → User Flow → 명세서 → 와이어프레임의 7단계 일관성과 추적성을 한 장으로 시각화
+
+### 핵심 요약
+
+| 항목 | 내용 |
+|------|------|
+| 서비스 | FitLog (종합 운동 기록 앱) |
+| 페인 포인트 | 3개 (단편화 / 입문 막막함 / 성장 가시화 부재) |
+| 페르소나 | 2명 (입문자 김초보 + 숙련자 박중급) |
+| 시나리오 | 4개 (A/B/C/D, Unhappy Path 3개) |
+| 총 페이지 | 25개 + 예외 4개 |
+| 명세 화면 | 5개, 34기능, 38 UI 요소 |
+| 와이어프레임 | v1(초안) → v2(개선) |
+| 핵심 의사결정 | 10건 기록 |
+
+### 일관된 3가지 원칙
+1. **페르소나 우선** — 모든 결정이 페인 포인트로 환원 가능
+2. **정량 명시** — 모호 표현 배제, 모든 수치 정량
+3. **추적성** — 페르소나 → UI 요소까지 ID로 추적 가능
+
+### ✅ Mission 07 체크리스트
+
+- [x] 문제정의 → 페르소나 → 시나리오 → IA → 플로우 → 명세서 → 와이어프레임까지 일관성 (proposal.md §2~§8 + project-overview 추적 다이어그램)
+- [x] 화면 목록 · 기능 명세 · 와이어프레임 모두 포함 (proposal.md §5~§8)
+- [x] 목차/구조 체계적 (11챕터 위계 목차)
+- [x] 핵심 의사결정 근거 기록 (proposal.md §9 Decision Log 10건)
+- [x] 산출물 간 연결 논리적 (proposal.md §10 추적성 + 추적 예시 2건)
+- [x] 누락 없이 전체 기획 과정 문서화 (Mission 03~06 통합 + Next Steps)
+- [x] GitHub README.md에 본인 이름 ("작성자: 이태호" 상단 명시)
 ---
 
 # 🅼🅾🅽3 Mission 03 — IA(정보 구조) 설계
@@ -196,6 +238,8 @@
 | 예외/빈 상태 화면 | 0개 | 4개 추가 |
 | 명세서 반영율 | 70% | **95%** |
 | Unhappy Path 커버 | 0/3 | **3/3** |
+
+| Mission 07 | 통합 기획서 | [`proposal.md`](./proposal.md), [`project-overview.png`](./project-overview.png) |
 
 ## ✅ Mission 06 체크리스트 자가 검증
 
