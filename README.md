@@ -12,7 +12,7 @@
 | Mission 04 | 사용자 플로우 설계 | [`userflow.png`](./userflow.png) |
 | Mission 05 | 기능 명세서 작성 | [`functional-spec.md`](./functional-spec.md), [`screen-feature-map.png`](./screen-feature-map.png) |
 | Mission 06 | 와이어프레임 리뷰 & 피드백 | [`wireframe-v1.png`](./wireframe-v1.png), [`review-feedback.md`](./review-feedback.md), [`wireframe-v2.png`](./wireframe-v2.png) |
-
+| Mission 08 | UX 테스트 설계 & 실행 | [`test-plan.md`](./test-plan.md), [`test-results.md`](./test-results.md), [`test-results-viz.png`](./test-results-viz.png) |
 ---
 
 ## 📘 통합 기획서 (Mission 07)
@@ -55,7 +55,56 @@
 - [x] 누락 없이 전체 기획 과정 문서화 (Mission 03~06 통합 + Next Steps)
 - [x] GitHub README.md에 본인 이름 ("작성자: 이태호" 상단 명시)
 ---
+---
 
+## 🧪 Mission 08 — UX 테스트 설계 & 실행
+
+Mission 06 와이어프레임 v2를 대상으로 실제 사용자 3명에게 UX 테스트를 진행하고 행동 데이터를 수집했습니다.
+
+### 📋 테스트 개요
+
+| 항목 | 내용 |
+|------|------|
+| 테스트 기간 | 2025-06-23 ~ 2025-06-25 |
+| 피험자 | 3명 (입문자 P1 / 중급 P2 / 숙련자 P3) |
+| 방법 | Moderated Usability Testing (대면 1:1, 종이 프로토타입) |
+| 태스크 | 5개 (첫 운동 시작 / 검색 회복 / 세트 기록 / 타이머 인지 / 완료 후 동선) |
+| 검증 가설 | 5건 (H1 ~ H5) |
+
+### 📊 테스트 결과 시각화
+
+![Test Results](./test-results-viz.png)
+
+### 🎯 핵심 결과
+
+**가설 검증**: 5건 중 3건 통과, 2건 기각/부분 기각
+- ✅ H2 숙련자 효율 (30초 이내 100%)
+- ✅ H3 검색 자력 회복 (100%)
+- ✅ H4 휴식 타이머 인지 (3초 이내 100%)
+- ❌ H1 입문자 진입 (67%, 5초 이내 80% 미달)
+- ❌ H5 홈 우세 동선 (33%, 메모/통계/홈 분산)
+
+**발견 사항**: 행동 기반 5건 (🔴 Critical 1 / 🟠 Major 2 / 🟡 Minor 2)
+
+### 🚀 v3 개선 액션 (우선순위)
+
+1. **P12 완료 화면 재설계** — 단일 CTA 강조 제거, 페르소나 기반 동적 CTA (F-01, Critical)
+2. **P07 빈 상태 위계 강화** — 보조 옵션 격하, 메인 CTA 시각 강화 (F-02, Major)
+3. **±15초 버튼 명확화** — "+15초" 텍스트 + 아이콘 (F-03, Major)
+
+### 📄 상세 문서
+- 👉 [테스트 계획서 (test-plan.md)](./test-plan.md)
+- 👉 [테스트 결과 보고서 (test-results.md)](./test-results.md)
+
+### ✅ Mission 08 체크리스트
+
+- [x] 테스트 목표·가설 명확 (목표 4개 + 가설 H1~H5)
+- [x] 구체적 태스크 시나리오 (Task 1~5)
+- [x] 최소 3명 테스트 진행 (P1/P2/P3)
+- [x] 사용자 행동 관찰 (망설임/오조작/회복 행동)
+- [x] 태스크 완료율/소요 시간 측정
+- [x] 감상평 배제, 행동 기반 데이터만 (시간·횟수·자연 발화)
+- [x] README에 본인 이름 ("작성자: 이태호")
 # 🅼🅾🅽3 Mission 03 — IA(정보 구조) 설계
 
 ## 📋 프로젝트 개요
